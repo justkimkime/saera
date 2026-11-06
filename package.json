@@ -1,0 +1,19 @@
+{
+  "name": "saera",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "test": "node --test api/tour.test.js src/response-data.test.js src/tourism.test.js src/routing/routes.test.js src/homepage-links.test.js src/api-cache.test.js src/kakao-map.test.js src/itineraries.test.js src/localization.test.js"
+  },
+  "dependencies": {
+    "react": "19.1.0",
+    "react-dom": "19.1.0"
+  },
+  "devDependencies": {
+    "vite": "6.3.4"
+  }
+}

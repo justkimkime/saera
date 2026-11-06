@@ -1,0 +1,31 @@
+# 의존성 · 빌드 결과
+node_modules/
+dist/
+coverage/
+*.tsbuildinfo
+
+# 실제 키와 로컬 환경 설정 (값이 빈 예시 파일만 포함)
+.env
+.env.*
+!.env.example
+.vercel/
+
+# 로컬 작업 · API 테스트 도구 보관 · 임시 검증 자료
+work/
+local-only/
+src/pages/ApiTestPage.jsx
+src/components/DataView.jsx
+src/style.css
+outputs/
+
+# 운영체제 · 편집기 · 로그
+.DS_Store
+._*
+.idea/
+.vscode/
+*.log
+npm-debug.log*
+*.bak
+*.tmp
+*.swp
+*.swo
