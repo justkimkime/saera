@@ -317,8 +317,9 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible { 
   .theme-tabs { gap: 24px; margin-bottom: 24px; }
   .theme-tabs button { font-size: 13px; }
   .search-heading { padding: 20px; }
-  .mode-tabs { padding: 0 20px 20px; gap: 8px; flex-wrap: nowrap; }
-  .mode-tabs button { padding: 12px 8px; font-size: 13px; flex: 1; white-space: nowrap; gap: 4px; }
+  .mode-tabs { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); padding: 0 20px 20px; gap: 8px; }
+  .mode-tabs button { min-width: 0; padding: 12px 8px; font-size: 13px; white-space: nowrap; gap: 4px; }
+  .mode-tabs button:last-child { grid-column: 1 / -1; }
   .mode-tabs svg { width: 16px; height: 16px; }
   .search-form { padding: 20px; gap: 16px; }
   .search-form>label,.search-form>.keyword-label { min-width: calc(50% - 16px); }
